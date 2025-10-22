@@ -18,8 +18,12 @@ export default function AddMenuScreen() {
       alert("Please fill all fields");
       return;
     }
-    alert(`Item "${name}" added!`);
-    router.back();
+    
+    const newItem = { name, description, course, price };
+    router.push({
+      pathname: "/", 
+      params: { newItem: JSON.stringify(newItem) },
+    });
   };
 
   return (
