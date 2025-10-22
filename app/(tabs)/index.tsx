@@ -82,17 +82,17 @@ const styles = StyleSheet.create({
   },
 
   addButton: {
-    backgroundColor: "#d3d3d3", // light grey box
+    backgroundColor: "#d3d3d3", 
     borderRadius: 10,
     padding: 10,
   },
 
   contentBox: {
     flex: 1,
-    backgroundColor: "#fff", // white box
+    backgroundColor: "#fff", 
     borderRadius: 15,
     borderWidth: 1,
-    borderColor: "#ccc", // thin border
+    borderColor: "#ccc", 
     padding: 15,
   },
 
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
 
   cardHeader: {
     flexDirection: "row",
-    justifyContent: "space-between", // push name left, price right
+    justifyContent: "space-between", 
     alignItems: "center",
     marginBottom: 5,
   },
