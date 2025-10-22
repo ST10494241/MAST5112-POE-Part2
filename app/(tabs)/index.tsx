@@ -1,6 +1,6 @@
 import { MaterialIcons } from "@expo/vector-icons";
-import { useRouter } from "expo-router";
-import React, { useState } from "react";
+import { useLocalSearchParams, useRouter } from "expo-router";
+import React, { useEffect, useState } from "react";
 import { FlatList, Pressable, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -13,10 +13,19 @@ interface MenuItem {
 
 export default function HomeScreen() {
   const router = useRouter();
+  const params = useLocalSearchParams();
+
   const [menuItems, setMenuItems] = useState<MenuItem[]>([
     { name: "Soup of the Day", description: "Fresh daily soup", course: "Starters", price: "200" },
     { name: "Grilled Chicken", description: "Served with vegetables", course: "Mains", price: "350" },
   ]);
+
+  useEffect(() => {
+    if (params.newItem) {
+      const newItem: MenuItem = JSON.parse(params.newItem as string);
+      setMenuItems([...menuItems, newItem]);
+    }
+  }, [params.newItem]);
 
   const totalItems = menuItems.length;
   const totalPrice = menuItems.reduce((sum, item) => sum + parseFloat(item.price), 0);
