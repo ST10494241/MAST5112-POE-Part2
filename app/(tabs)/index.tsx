@@ -33,7 +33,7 @@ export default function HomeScreen() {
       <View style={styles.header}>
         <Pressable
           style={styles.addButton}
-          onPress={() => router.push("/(tabs)/addRecipe")}
+          onPress={() => router.push("/addRecipe")}
         >
           <MaterialIcons name="add" size={28} color="white" />
         </Pressable>
