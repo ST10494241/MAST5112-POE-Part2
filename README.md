@@ -143,8 +143,6 @@ To ensure a **clean modular architecture** and isolate **CRUD logic** from **UI 
   - `for...of`
   - `Array.reduce()`
 
----
-
 #### 2. Custom Add Item Screen (`addRecipe.tsx`)
 
 **Why:**  
@@ -156,8 +154,6 @@ To demonstrate **validation**, **controlled form inputs**, and **navigation flow
 - Implemented **SafeAreaView** with **custom styling**
 - Added **navigation** using `router.push()` after saving
 
----
-
 #### 3. Home Screen Enhancements (`index.tsx`)
 
 **Why:**  
@@ -168,8 +164,6 @@ To visually demonstrate **real-time data summarization**.
 - Added **summary metrics** (**totals** + **averages**)
 - Improved **FlatList design**
 - Implemented **dynamic recalculation** using **hooks**
-
----
 
 #### 4. Filter Screen Rewrite (`filter.tsx`)
 
@@ -184,12 +178,12 @@ To fix **filtering issues** and support **repeated filtering actions**.
   - `appliedCourse` (**filter applied**)
 - Improved **UI hit zones** for **radio buttons**
 
+---
+
 ## 6. Harvard: Anglia (IIE) Reference List
 
 ### 🏛 Institutional Sources
 - **IIE**. (2024) *MAST5112POE*. Available at: [https://advtechonline.sharepoint.com/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7B0358D574-E8A9-48D7-A374-45CD8B440339%7D&file=MAST5112POE.docx&action=default&mobileredirect=true&CT=1763058684466&OR=ItemsView](https://advtechonline.sharepoint.com/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7B0358D574-E8A9-48D7-A374-45CD8B440339%7D&file=MAST5112POE.docx&action=default&mobileredirect=true&CT=1763058684466&OR=ItemsView)
-- 
----
 
 ### 💻 Core Technology Documentation
 - **Expo**. (2025) *Expo Documentation*. Available at: [https://docs.expo.dev](https://docs.expo.dev)  
@@ -199,7 +193,3 @@ To fix **filtering issues** and support **repeated filtering actions**.
 - **Expo**. (2025) *Expo Vector Icons Documentation* Available at: [https://docs.expo.dev/guides/icons/](https://docs.expo.dev/guides/icons/)
 - **Meta**. (2025) *React Native Documentation*. Available at: [https://reactnative.dev](https://reactnative.dev)  
 - **Meta**. (2025) *React Documentation*. Available at: [https://react.dev](https://react.dev)  
-
----
-
-  
