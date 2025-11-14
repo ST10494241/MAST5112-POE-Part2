@@ -26,7 +26,43 @@ This app is designed for **learning and assessment purposes**, supporting **func
 
 1. Install **Expo Go** from **Google Play** or the **Apple App Store**.
 2. Clone this project:
-
 ```bash
 git clone <repo-url>
 cd <project-folder>
+```
+3. Install project dependencies:
+```bash
+npm install
+```
+4. Start the Expo development server:
+```bash
+npx expo start
+```
+5. Scan the QR code in your terminal or browser using Expo Go.
+
+## 2. Features
+
+### Core CRUD Features
+
+| **Feature** | **Description** | **Code Reference** |
+|------------|----------------|-----------------|
+| **Create** | Add new menu items with validation | `app/addRecipe.tsx` (`handleSave`) |
+| **Read** | View menu items using `FlatList` | `app/(tabs)/index.tsx` |
+| **Update** | Not required for this project | — |
+| **Delete** | Remove menu items by name | `removeMenuItem()` |
+
+### Supporting Features
+
+#### 🍽 Filtering
+- Categories: **All / Starters / Mains / Desserts**
+- Implemented with **`useMemo`** for high-performance recalculation
+
+#### ✅ Validation
+- **Required fields:** dish name and price
+
+#### 💰 Price Calculations
+- **Total price**
+- **Averages by course** using `getAveragePriceByCourse()`
+
+#### 🧭 Navigation
+- Implemented with **Expo Router** using `useRouter()`
