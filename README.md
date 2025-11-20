@@ -9,6 +9,9 @@ The app allows users to manage a restaurant menu through basic **CRUD operations
 
 This app is designed for **learning and assessment purposes**, supporting **functionality demonstrations**, **code evidence**, and **academic integrity**.
 
+### Youtube Link with demostrations
+[https://youtube.com/shorts/UIXwudlDneM?feature=share](https://youtube.com/shorts/UIXwudlDneM?feature=share)  
+
 ### What the App Does
 
 - **Create:** Add new menu items
